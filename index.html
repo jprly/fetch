@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch Test</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container my-5">
+        <h1 class="text-center">Fetch Test</h1>
+
+        <div class="row">
+            <div class="col">
+
+                <select id="selectUser" class="custom-select">
+                    <option selected>Open this select menu</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+
+            
+            </div>
+            <div class="col">
+                <div class="custom-control custom-switch my-3">
+                    <input type="checkbox" class="custom-control-input" id="completeToggle" value="showAll">
+                    <label class="custom-control-label" for="completeToggle">Show All Todos</label>
+                  </div>
+            </div>
+        </div>
+
+
+
+
+        <table class="table" id="todoTable">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">userId</th>
+                <th scope="col">title</th>
+                <th scope="col">completed</th>
+              </tr>
+            </thead>
+            <tbody id='todoData'>
+              <!-- todo data will go here -->
+            </tbody>
+          </table>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
